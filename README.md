@@ -1,5 +1,9 @@
 # Kpomodoro
 
+
+## Author
+Benard Akaka
+
 <table>
 <tr>
 <td>
@@ -34,11 +38,9 @@ To fix a bug or enhance an existing module, follow these steps:
 * Pyperclip
 * Flask
 
-## Author
-Benard Akaka
 
 ## License 
-[MIT](https://github.com/Josephshitandi/Pitches/blob/master/LICENSE.md)
+[MIT](https://github.com/ibenardakaka/Pitches/blob/master/LICENSE.md)
 
  © [Benard Akaka](https://github.com/Benardakaka)
 
