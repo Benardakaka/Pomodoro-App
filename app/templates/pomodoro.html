@@ -1,0 +1,46 @@
+{% extends 'base.html'%}
+{% import 'macros.html' as macro%}
+
+<!-- Styles block -->
+
+{% block styles%}
+{{ super() }}
+<link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
+<script src="{{url_for('static',filename='js/script2.js')}}"></script>
+{% endblock %}
+{% block content %}
+
+<body>
+
+
+    <!-- Content block -->
+
+    <h1 style="color: brown;">
+        <center><b>WELCOME TO POMODORO APP</b></center>
+    </h1>
+   <div class="container">
+    <div id="pomodoro-app" style="text-align: center; color: aliceblue;">
+        <div id="container">
+          <div id="timer">
+            <div id="time">
+              <span id="minutes">60</span>
+              <span id="colon">:</span>
+              <span id="seconds">00</span>
+            </div>
+            <div id="filler"></div>
+          </div>
+      
+          <div id="buttons">
+            <button id="minus"><i class="fas fa-minus"></i></button>
+            <button id="plus"><i class="fas fa-plus"></i></button>
+            <button id="work">Work</button>
+            <button id="shortBreak">Short Break</button>
+            <button id="longBreak">Long Break</button>
+            <button id="stop">Stop</button>
+          </div>
+        </div>
+      </div>
+      </div>
+</body>
+
+{% endblock%}

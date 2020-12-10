@@ -1,0 +1,49 @@
+
+{% extends 'base.html'%}
+{% import 'macros.html' as macro%}
+
+<!-- Styles block -->
+
+{% block styles%}
+{{ super() }}
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
+<!-- <script src="{{url_for('static',filename='js/script.js')}}"></script> -->
+{% endblock %}
+{% block content %}
+
+<body style="background-color: rgb(173, 166, 189);">
+
+
+    <!-- Content block -->
+
+    <h1 style="color: brown;">
+        <center><b>WELCOME TO POMODORO APP</b></center>
+    </h1>
+   
+    <div id="pomodoro-app">
+        <div id="container">
+          <div id="timer">
+            <div id="time">
+              <span id="minutes">60</span>
+              <span id="colon">:</span>
+              <span id="seconds">00</span>
+            </div>
+            <div id="filler"></div>
+          </div>
+      
+          <div id="buttons">
+            <button id="minus"><i class="fas fa-minus"></i></button>
+            <button id="plus"><i class="fas fa-plus"></i></button>
+            <button id="work">Work</button>
+            <button id="shortBreak">Short Break</button>
+            <button id="longBreak">Long Break</button>
+            <button id="stop">Stop</button>
+          </div>
+        </div>
+      </div>
+</body>
+
+<p> <b><center> Please sign in to get access</center></b></p>
+
+{% endblock%}
